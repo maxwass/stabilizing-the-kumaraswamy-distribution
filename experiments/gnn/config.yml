@@ -1,0 +1,11 @@
+# architecture
+out_channels: 32
+hidden_channels: 32
+
+# training
+epochs: 300
+learning_rate: 0.01
+entropy_estimate_samples: 10 # for tanh-normal
+
+# posterior predictive samples
+num_post_pred_samples: 30

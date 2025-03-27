@@ -1,0 +1,44 @@
+name: kumar
+channels:
+  - conda-forge
+  - apple
+dependencies:
+  - python=3.9
+  - pip>=19.0
+  - tensorflow-deps
+  - matplotlib
+  - seaborn
+  - numpy
+  - scikit-learn # linear regression in predictive checks
+  - jupyter
+  - ipykernel # connecting conda to jupyter
+  - pytorch
+  - torchvision
+  - lightning
+  - pip:
+    - trash-cli
+    - multiprocess
+    - plotly
+    # tensorflow stuff: https://stackoverflow.com/questions/72964800/what-is-the-proper-way-to-install-tensorflow-on-apple-m1-in-2022
+    #- tensorflow
+    - tensorflow-macos
+    - tensorflow-metal
+    - tensorflow_probability # pip install 'tensorflow-probability[tf]'
+    # jax stuff
+    - jax
+    - jaxlib
+    #
+    - pyro-ppl
+    - mpmath
+    - pyyaml
+    - einops
+    - wandb
+    #
+    - torch-geometric # for gnn
+    #- torchrl # for tanhnormal
+
+
+
+# Possibly Useful Links for the Future:
+# Jax for Apple Metal: https://developer.apple.com/metal/jax/
+# PyTorch for Apple Metal: https://developer.apple.com/metal/pytorch/

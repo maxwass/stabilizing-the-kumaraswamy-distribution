@@ -1,0 +1,16 @@
+# run ex) python train.py --var_post ks --top_m 1 --hidden_layers 32 32 32 --learning_rate 0.01 --iterations 1000 --seed 0
+# data
+data_dim: 5
+data_power: 5
+num_bandits: 10000
+# model
+top_m: 1
+hidden_layers: [32, 32, 32]
+# optimization
+learning_rate: 0.0005
+iterations: 10000
+# lmcts specific
+inner_num_iters: 100
+beta_inv:  0.0001
+# reproducibility
+seed: 0

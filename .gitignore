@@ -1,0 +1,33 @@
+__pycache__/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+.pyc
+
+# VSCode settings (if you use Visual Studio Code)
+.vscode/
+
+# Data
+data/
+data/synthetic/*
+!data/synthetic/.gitkeep
+!data/synthetic/README.md
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Models
+*.ckpt
+*.zip
+
+# Logging
+wandb/
+lightning_logs/

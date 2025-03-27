@@ -1,0 +1,7 @@
+# run ex) python train.py --var_post gauss --likelihood cb --dataset mnist
+hidden_units: 500
+keep_prob: 0.9 # 1 - dropout rate. Defined in cb_vae_minst.ipynb: '_, c = sess.run([optimizer, cost], {eps: eps_batch, X: X_batch, keep_prob: 0.9})'
+learning_rate: 0.001
+batch_size: 500
+max_epochs: 200
+seed: 0

@@ -1,0 +1,14 @@
+# run ex) python train.py --var_post ks --top_m 1 --hidden_layers 32 32 32 --learning_rate 0.01 --iterations 1000 --seed 0
+# data
+data_dim: 5
+data_power: 5
+num_bandits: 10000
+# model
+var_post: ks
+top_m: 1
+hidden_layers: [32, 32, 32]
+learning_rate: 0.01
+#entropy_scale: 0.005
+entropy_estimate_samples: 10 # for tanh-normal/relaxed-bernoulli
+iterations: 2000
+seed: 0
